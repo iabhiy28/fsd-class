@@ -1,0 +1,15 @@
+body{
+    background-color: cornflowerblue;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 600px;
+    width: 100%;
+    background-color: chartreuse;
+    background-origin: 2px solid black;
+
+}
+.child1,.child2,child3,.child4{
+    border: 2px dotted blue;
+}

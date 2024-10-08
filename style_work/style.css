@@ -4,12 +4,13 @@ body{
 .container{
     background-color: aqua;
     border: 2px solid red;
-    height: 400px;
+    height: 800px;
     padding: 20px;
     box-sizing: content-box;
     display: flex;
     flex-wrap: wrap;
-    flex-flow: row-reverse;
+    justify-content: center;
+    align-items: center;
 }
 .child1,.child2,.child3,.child3, .child4{
     background-color:cadetblue;
@@ -19,7 +20,8 @@ body{
     margin: 20px;
 }
 .child1{
-
+    background-color: aliceblue;
+    flex-basis: 20%;
 }
 .child2{
     background-color:chocolate ;
