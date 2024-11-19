@@ -1,0 +1,9 @@
+.icard{
+    height: 250px;
+    width: 200px;
+    border: 2px solid red;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-top: 10px;
+    margin-left: 20px;
+}
