@@ -1,0 +1,8 @@
+*{
+    background-color: cornsilk;
+}
+.root{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

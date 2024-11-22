@@ -1,0 +1,17 @@
+.imageCard{
+    height: 400px;
+    width: 300px;
+    border: 2px solid red;
+    /* background-image:url(carr.jpg);
+    background-size: cover; */
+
+}
+
+.catDiv{
+    height: 100px;
+    width: 100px;
+    margin-left: 80px;
+    margin-top: 100px;
+    background-color:cornflowerblue;
+    border: 2px solid black;
+}

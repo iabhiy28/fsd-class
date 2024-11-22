@@ -2,8 +2,15 @@ import React from 'react'
 import './App.css'
 import Student from './Student.jsx'
 import logo from './assets/OIP (1).jpeg'
+import StudentState from './StudentState.jsx';
+import ImageMani from './ImageMani.jsx';
 
 function App() {
+
+  let outerStyle = {
+    backgroundColor: "yellow"
+
+  }
 
   let a =20;
 
@@ -17,8 +24,8 @@ function App() {
   }
 
   const student_data = {
-    name : "seth",
-    roll : 45,
+    name : "Abhishek",
+    roll : 10,
     college: "ABES Engineering College",
     sec : "B",
     branch : "Aiml",
@@ -26,24 +33,28 @@ function App() {
     
   }
   return (
+    <div>
+      {/* //<StudentState /> */}
+      <ImageMani />
+    </div>
 
    
 
-    <div style={{color:'black'}}> 
-    {/* <h2>App</h2> */}
+    //<div style={{color:'black'}}> 
+   // {/* <h2>App</h2> */}
 
 
-    {/* <Student college="ABES Engineering College" sec="B" roll="45" name = "Seth" branch ="Aiml" pic = {<img src={logo} height={100} width={100}/>}/>
-    <Student  sec="B" roll="46" name = "Tomar" branch ="Aiml" pic = {<img src={logo} height={100} width={100}/>}/>
-    <Student college="ABES Engineering College" sec="B" roll="47" name = "Diwedi" branch ="Aiml" pic = {<img src={logo} height={100} width={100}/>}/> */}
+    //{/* <Student college="ABES Engineering College" sec="B" roll="45" name = "Seth" branch ="Aiml" pic = {<img src={logo} height={100} width={100}/>}/>
+    //<Student  sec="B" roll="46" name = "Tomar" branch ="Aiml" pic = {<img src={logo} height={100} width={100}/>}/>
+    //<Student college="ABES Engineering College" sec="B" roll="47" name = "Diwedi" branch ="Aiml" pic = {<img src={logo} height={100} width={100}/>}/> */}
 
-    <Student data = {student_data}/>
-
-
+    //<Student data = {student_data}/>
 
 
 
-    </div>
+
+
+    //</div>
   )
 }
 

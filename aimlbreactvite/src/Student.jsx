@@ -18,7 +18,7 @@ function Student({data}) {
                 <td>Roll : </td>
                 <td>{data.roll}</td>
             </tr>
-            <tr>c
+            <tr>
                 <td>Name:</td>
                 <td>{data.name}</td>
             </tr>
