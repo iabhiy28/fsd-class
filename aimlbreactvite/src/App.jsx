@@ -4,6 +4,7 @@ import Student from './Student.jsx'
 import logo from './assets/OIP (1).jpeg'
 import StudentState from './StudentState.jsx';
 import ImageMani from './ImageMani.jsx';
+import UseEffectWorking from './UseEffectWorking.jsx';
 
 function App() {
 
@@ -35,7 +36,8 @@ function App() {
   return (
     <div>
       {/* //<StudentState /> */}
-      <ImageMani />
+      {/* <ImageMani /> */}
+      <UseEffectWorking />
     </div>
 
    
