@@ -5,39 +5,41 @@ import logo from './assets/OIP (1).jpeg'
 import StudentState from './StudentState.jsx';
 import ImageMani from './ImageMani.jsx';
 import UseEffectWorking from './UseEffectWorking.jsx';
+import Regisration from './Regisration.jsx';
 
 function App() {
 
-  let outerStyle = {
-    backgroundColor: "yellow"
+  // let outerStyle = {
+  //   backgroundColor: "yellow"
 
-  }
+  // }
 
-  let a =20;
+  // let a =20;
 
-  let mystyle ={
-    backgroundColor : 'cyan',
-    color:'red',
-    border:'10px solid black',
-    height : '100px',
+  // let mystyle ={
+  //   backgroundColor : 'cyan',
+  //   color:'red',
+  //   border:'10px solid black',
+  //   height : '100px',
     
 
-  }
+  // }
 
-  const student_data = {
-    name : "Abhishek",
-    roll : 10,
-    college: "ABES Engineering College",
-    sec : "B",
-    branch : "Aiml",
-    pic : 'https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/car_4.png'
+  // const student_data = {
+  //   name : "Abhishek",
+  //   roll : 10,
+  //   college: "ABES Engineering College",
+  //   sec : "B",
+  //   branch : "Aiml",
+  //   pic : 'https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/car_4.png'
     
-  }
+  // }
   return (
     <div>
       {/* //<StudentState /> */}
       {/* <ImageMani /> */}
-      <UseEffectWorking />
+      {/* <UseEffectWorking /> */}
+      <Regisration />
     </div>
 
    
