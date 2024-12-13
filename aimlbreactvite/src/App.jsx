@@ -1,65 +1,22 @@
-import React from 'react'
-import './App.css'
-import Student from './Student.jsx'
-import logo from './assets/OIP (1).jpeg'
-import StudentState from './StudentState.jsx';
-import ImageMani from './ImageMani.jsx';
-import UseEffectWorking from './UseEffectWorking.jsx';
-import Regisration from './Regisration.jsx';
+import Registration from './Regisration.jsx';
+import Login from './Login.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home.jsx';
+import { useState } from 'react';
+
 
 function App() {
-
-  // let outerStyle = {
-  //   backgroundColor: "yellow"
-
-  // }
-
-  // let a =20;
-
-  // let mystyle ={
-  //   backgroundColor : 'cyan',
-  //   color:'red',
-  //   border:'10px solid black',
-  //   height : '100px',
-    
-
-  // }
-
-  // const student_data = {
-  //   name : "Abhishek",
-  //   roll : 10,
-  //   college: "ABES Engineering College",
-  //   sec : "B",
-  //   branch : "Aiml",
-  //   pic : 'https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/car_4.png'
-    
-  // }
+  const [shareData , setShareData] = useState();
   return (
-    <div>
-      {/* //<StudentState /> */}
-      {/* <ImageMani /> */}
-      {/* <UseEffectWorking /> */}
-      <Regisration />
-    </div>
-
-   
-
-    //<div style={{color:'black'}}> 
-   // {/* <h2>App</h2> */}
-
-
-    //{/* <Student college="ABES Engineering College" sec="B" roll="45" name = "Seth" branch ="Aiml" pic = {<img src={logo} height={100} width={100}/>}/>
-    //<Student  sec="B" roll="46" name = "Tomar" branch ="Aiml" pic = {<img src={logo} height={100} width={100}/>}/>
-    //<Student college="ABES Engineering College" sec="B" roll="47" name = "Diwedi" branch ="Aiml" pic = {<img src={logo} height={100} width={100}/>}/> */}
-
-    //<Student data = {student_data}/>
-
-
-
-
-
-    //</div>
-  )
+    <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<Home />}> 
+        <Route path="/registration" element={<Registration regData={setShareData}/>} />
+        <Route path="/login" element={<Login regData={shareData}/>} />
+      </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

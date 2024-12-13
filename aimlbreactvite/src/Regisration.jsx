@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Registration({regData}) {
-  const [name ,setName] = useState();
+  const [name ,setName] = useState(""); 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [myData , setData] = useState();
@@ -10,10 +10,11 @@ function Registration({regData}) {
 
   function getData(event) {
     event.preventDefault();
-    alert(`HI ${name}`);
+    // alert(`HI ${name}`);
     const data  = {
       name, email , password
     }
+    // regData(data)
     setData(data)
   }
 
