@@ -1,8 +1,14 @@
-import React from 'react'
-
-function child1({studentData}) {
+import React, { useContext } from 'react'
+import Child2 from './Child2';
+import { BuildContext } from '../AppProps';
+function child1() {
+    const { name } = useContext(BuildContext);
   return (
-    <div>{studentData.name}</div>
+    <div>
+        <p>Name: {name}</p>
+        <Child2 />
+    </div>
+
   )
 }
 

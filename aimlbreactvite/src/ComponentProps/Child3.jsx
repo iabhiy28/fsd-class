@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { BuildContext } from '../AppProps';
 
 function Child3() {
+    const {name, branch , section} = useContext(BuildContext);
   return (
-    <div>Child3</div>
+    <div>
+        <p>{name}</p>
+        <p>{branch}</p>
+        <p>{section}</p>
+    </div>
   )
 }
 
